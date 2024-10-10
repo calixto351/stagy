@@ -1,0 +1,43 @@
+
+#1) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.#
+#IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;#
+  fibonaccisoma = [0,1]
+  while fibonaccisoma [-1 ] + fibonaccisoma [-2] < 1000:  # usando logica do fibonacci com limite
+      complement= fibonaccisoma[-1] + fibonaccisoma [-2]
+      fibonaccisoma.append(complement)
+  verificanum = int(input("selecione o numero"))
+  if verificanum  in fibonaccisoma:
+      print("O numero está")
+  else:
+      print("O numero não está")
+#2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.#
+
+Texto = input("selecione uma frase")
+
+Letra = 'a'
+Qtexto = Texto.count(Letra) + Texto.count(Letra.upper())
+
+if Qtexto > 0:
+    print(f"A quantidade de letras que foi seleciona é {Qtexto} ")
+else:
+    print("Não tem nenhuma correspondente")
+#3) Observe o trecho de código abaixo: int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);#
+#Ao final do processamento, qual será o valor da variável SOMA?#
+
+int = 12
+SOMA = 0
+K = 1
+while K < int:
+    K = K + 1; 
+    SOMA = SOMA + K;
+print(SOMA) 
+4) Descubra a lógica e complete o próximo elemento:
+a) 1, 3, 5, 7, 9 #Complemento de 2
+b) 2, 4, 8, 16, 32, 64, 128 #multiplicando por 2
+c) 0, 1, 4, 9, 16, 25, 36, 49 #quadrado do numero
+d) 4, 16, 36, 64, 100 #quadrado da ordem 2,4,6,8,
+e) 1, 1, 2, 3, 5, 8, 13 #somando o anterior com o proximo
+f) 2,10, 12, 16, 17, 18, 19, 20 #numeros compostos e primos
+5)Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+Deixava a primeira ligada até esquentar e depois desligava, deixava a segunda ligada a terceira eu iria saber que seria a que eu não liguei.
+ia em duas salas aleatorias e fazia a comparação.
